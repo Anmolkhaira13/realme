@@ -1,0 +1,87 @@
+{% extends 'dashboard2.html' %}
+{% block content %}
+
+{% load staticfiles %}
+<div class="row p-5">
+<div class="col-7 text-justify">
+<img src={%static "images/dia6.jpg" %} style="width:450px; height:250px;">
+<h2 class="text-info text-center"><b> <br>Diabetes Overview</b></h2>
+<p class="text-dark text-justify">Diabetes is a disorder of metabolism -- the way our bodies use digested food for growth and energy. There are three main types of diabetes: type 1, type 2, and gestational diabetes.</p>
+<br> <h3 class= "text-info text-center"><b> What Is Diabetes?</b></h3>
+<p class="text-dark text-justify">Diabetes is a number of diseases that involve problems with the hormone 
+insulin. Normally, the pancreas (an organ behind the stomach) releases insulin to help your body store and 
+use the sugar and fat from the food you eat. Diabetes occurs when one of the following occurs:
+<ul type="disc">
+<li>
+When the pancreas does not produce any insulin.</li>
+<li>When the pancreas produces very little insulin.</li>
+<li>When the body does not respond appropriately to insulin, a condition called "insulin resistance".</li>
+</li>
+</ul>
+<br><img src={%static "images/dia7.jpg" %} style="width:450px; height:250px;">
+<h2 class="text-info text-center"><b><br>Types of Diabetes</b></h2>
+<p class="text-dark text-justify">Some of the most common types of Diabetes include:<br>
+
+<ul type="disc">
+<li>
+
+<b>Type 1 Diabetes : </b>is also called insulin-dependent diabetes. It used to be called juvenile-onset diabetes, because it often begins in childhood.
+
+Type 1 diabetes is an autoimmune condition. It's caused by the body attacking its own pancreas with antibodies. In people with type 1 diabetes, the damaged pancreas doesn't make insulin.
+
+This type of diabetes may be caused by a genetic predisposition. It could also be the result of faulty beta cells in the pancreas that normally produce insulin.
+
+A number of medical risks are associated with type 1 diabetes. Many of them stem from damage to the tiny blood vessels in your eyes (called diabetic retinopathy), nerves (diabetic neuropathy), and kidneys (diabetic nephropathy). Even more serious is the increased risk of heart disease and stroke.
+
+Treatment for type 1 diabetes involves taking insulin, which needs to be injected through the skin into the fatty tissue below. </li>
+
+<li><b>Type 2 Diabetes: </b>used to be called adult-onset diabetes, but with the epidemic of obese and overweight kids, more teenagers are now developing type 2 diabetes. Type 2 diabetes was also called non-insulin-dependent diabetes.
+
+Type 2 diabetes is often a milder form of diabetes than type 1. Nevertheless, type 2 diabetes can still cause major health complications, particularly in the smallest blood vessels in the body that nourish the kidneys, nerves, and eyes. Type 2 diabetes also increases your risk of heart disease and stroke.
+
+With Type 2 diabetes, the pancreas usually produces some insulin. But either the amount produced is not enough for the body's needs, or the body's cells are resistant to it. Insulin resistance, or lack of sensitivity to insulin, happens primarily in fat, liver, and muscle cells.</li>
+</ul></p>
+
+<br><img src={%static "images/dia5.jpg" %} style="width:450px; height:250px;">
+<h2 class="text-info text-center"><b> <br>Symptoms Of Diabetes</b></h2>
+<p class="text-dark text-justify">How can you tell if you have diabetes? Most early symptoms are from higher-than-normal levels of glucose, a kind of sugar, in your blood.
+
+The warning signs can be so mild that you don't notice them. That's especially true of type 2 diabetes. Some people don't find out they have it until they get problems from long-term damage caused by the disease.
+<br> Early signs of Type 1 Diabetes:
+<ul type="disc">
+    <li>Hunger and Fatigue.</li>
+    <li>Peeing more often and being thirstier.</li>
+    <li>Dry mouth and itchy skin.</li>
+    <li>Blurred vision.</li>
+    </ul>
+<br>
+Early signs of Type 2 Diabetes:
+<ul type="disc">
+    <li>Yeast Infection.</li>
+    <li>Slow-healing sores or cuts.</li>
+    <li>Pain or numbness in your feet or legs..</li>
+    <li>Unplanned weight loss.</li>
+    </ul>
+   </p> 
+    </div>
+<div class="col-5">
+    <h3 class="text-info"><b> Recommended For You</b></h3>
+    <br><div class="row">
+    <div class="col-3">
+    <img src={%static "images/dia1.jpg" %} style="width:80px;height:80px"></div>
+    <div class="col-9"><a class="text-info" href="https://www.webmd.com/diabetes/features/stock-your-kitchen-for-diabetes-health#1" target="_blank"><b>Your Diabetes Shopping List</b></a> <br></div></div>
+    <br><div class="row">
+    <div class="col-3">
+    <img src={%static "images/dia2.jpg" %} style="width:80px;height:80px"></div>
+    <div class="col-9"><a class="text-info" href="https://www.webmd.com/diabetes/10-diabetes-diet-myths#1" target="_blank"><b>Diabetes And Diet</b></a> <br></div></div>
+    <br><div class="row">
+    <div class="col-3">
+    <img src={%static "images/dia3.jpg" %} style="width:80px;height:80px"></div>
+    <div class="col-9"><a class="text-info" href="https://www.webmd.com/diabetes/diabetes-lifestyle-tips" target="_blank"><b>Control Your Diabetes</b></a> <br></div></div>
+    <br><div class="row">
+    <div class="col-3">
+    <img src={%static "images/dia4.jpg" %} style="width:80px;height:80px"></div>
+    <div class="col-9"><a class="text-info" href="https://www.webmd.com/pain-management/ss/slideshow-leg-pain-causes" target="_blank"><b>What's Causing Your Leg Pain</b></a> <br></div></div>
+    </div>
+    </div>
+{% endblock %}

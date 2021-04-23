@@ -1,0 +1,85 @@
+{% extends 'dashboard1.html' %}
+{% block content %}
+<form method ="post" action="{% url 'update_expert_profile' %}" enctype="multipart/form-data">
+    {% csrf_token %}
+
+<div class="row">
+<div class="col-4">
+        {{ expert.photo.image.url }}<br>
+        <img src="{{ expert.photo.url }}" width="250" height="300"><br>
+        <input type="file" name="photo" id="photo" required maxlength="30" /> <br>   
+        </div>
+
+<div class="col-4 pt-4">       
+<div class="form-group row bg-light">
+<label for="doctor_id" class="col-sm-4 col-form-label"><h5 class="text-info">I.D</h5></label>
+<div class="col-sm-7 p-1">
+<input type="text" name="doctor_id" class="form-control" required maxlength="10" id="doctor_id" value="{{expert.doctor_id}}">
+</div>
+</div>
+<div class="form-group row bg-light">
+        <label for="expert_username" class="col-sm-4 col-form-label"><h5 class="text-info">Name</h5></label>
+        <div class="col-sm-7 p-1">
+        <input type="text" name="username" class="form-control" required maxlength="20" id="expert_username" value="{{expert.username}}">
+        </div>
+        </div>
+<div class="form-group row bg-light">
+                <label for="expert_email" class="col-sm-4 col-form-label"><h5 class="text-info">Email</h5></label>
+                <div class="col-sm-7 p-1">
+                <input type="text" name="email" class="form-control" required maxlength="30" id="expert_email" value="{{expert.email}}">
+                </div>
+                </div>
+<div class="form-group row bg-light">
+                        <label for="expert_phone" class="col-sm-4 col-form-label"><h5 class="text-info">Phone</h5></label>
+                        <div class="col-sm-7 p-1">
+                        <input type="text" name="phoneno" class="form-control" required maxlength="20" id="expert_phone" value="{{expert.phoneno}}">
+                        </div>
+                        </div>
+<div class="form-group row bg-light">
+                                <label for="expert_city" class="col-sm-4 col-form-label"><h5 class="text-info">City</h5></label>
+                                <div class="col-sm-7 p-1">
+                                <input type="text" name="city" class="form-control" required maxlength="20" id="expert_city" value="{{expert.city}}">
+                                </div>
+                                </div>
+
+</div>
+
+<div class="col-4 pt-4">
+        <div class="form-group row bg-light">
+                <label for="expert_address" class="col-sm-5 col-form-label"><h5 class="text-info">Address</h5></label>
+                <div class="col-sm-7 p-1">
+                <input type="text" name="address" class="form-control" required maxlength="40" id="expert_address" value="{{expert.address}}">
+                </div>
+                </div>
+
+<div class="form-group row bg-light">
+                        <label for="expert_expertise" class="col-sm-5 col-form-label"><h5 class="text-info">Expertise</h5></label>
+                        <div class="col-sm-7 p-1">
+                        <input type="text" name="expertise" class="form-control" required maxlength="20" id="expert_expertise" value="{{expert.expertise}}">
+                        </div>
+                        </div>
+<div class="form-group row bg-light">
+                        <label for="expert_qualification" class="col-sm-5 col-form-label"><h5 class="text-info">Qualification</h5></label>
+                        <div class="col-sm-7 p-1">
+                        <input type="text" name="qualification" class="form-control" required maxlength="20" id="expert_qualification" value="{{expert.qualification}}">
+                        </div>
+                        </div>
+
+
+
+<div class="form-group row bg-light">
+                                                <label for="expert_password" class="col-sm-5 col-form-label"><h5 class="text-info">Password</h5></label>
+                                                <div class="col-sm-7 p-1">
+                                                <input type="text" name="password" class="form-control" required maxlength="20" id="expert_password" value="{{expert.password}}">
+                                                </div>
+                                                </div>
+                                                <div class="text-right">
+<input type="submit" name="Update" value="Update" class="btn btn-info">
+                                            </div> 
+                                        </div>
+
+</div>
+
+</form>
+
+{% endblock %}

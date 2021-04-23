@@ -1,0 +1,35 @@
+{% extends 'dashboard1.html' %}
+{% block content %}
+<div class="row pt-3">
+<div class="col-12">
+<h2 class="text-center text-info"><b> Breast Cancer Dataset Description</b></h2>
+<h3 class="text-info"> <br>Citation</h3>
+<p class="text-dark text-justify">This breast cancer domain was obtained from the University Medical Centre,
+Institute of Oncology, Ljubljana, Yugoslavia.  Thanks go to M. Zwitter and 
+M. Soklic for providing the data.<br>This data set includes 201 instances of one class and 85 instances of another class. The instances are described by 9 attributes, some of which are linear and some are nominal. 
+</p>
+
+<h3 class="text-info">Attribute Information</h3>
+<ol type="1">
+<li>Class: no-recurrence-events, recurrence-events.</li>
+<li>Age Group: 10-19, 20-29, 30-39, 40-49, 50-59, 60-69, 70-79, 80-89, 90-99.</li>
+<li>Menopause: lt40 = less than 40 years , ge40 = greater than 40 , premeno = premature menopause.</li>
+<li>Tumor-size: 0-4, 5-9, 10-14, 15-19, 20-24, 25-29, 30-34, 35-39, 40-44,45-49, 50-54, 55-59.</li>
+<li>inv-nodes: 0-2, 3-5, 6-8, 9-11, 12-14, 15-17, 18-20, 21-23, 24-26,27-29, 30-32, 33-35, 36-39.</li>
+<li>Node-caps: yes, no.</li>
+<li>Deg-malig: Degree of malignancy range is : 1, 2, 3.</li>
+<li>Breast: left, right.</li>
+<li>breast-quad: left-up, left-low, right-up, right-low, central.</li>
+<li>Irradiat: Is there breast cancer? yes, no.</li>
+</ol>
+<h3 class="text-info"> Other Information</h3>
+<p class="text-dark">Missing Attribute Values: denoted by "NaN"<br>
+Class Distribution:<br>
+    1. no-recurrence-events: 201 instances.<br>
+
+    2. recurrence-events: 85 instances</p>
+</div>
+</div>
+{% endblock %}
+
+ 

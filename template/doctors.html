@@ -1,0 +1,131 @@
+{% extends 'hf.html' %}
+{% block content %}
+
+{% load staticfiles %}
+
+<div class="row  p-5 " style="background-image:url('{%static "images/doc2.jpg" %}');  background-size:cover; height:400px; ">
+<div class="col-12 text-center text-light pt-4 pd-5 ">
+<h1><b><br><br><br><br>YOU ARE IN SAFE HANDS<br><br> </b></h1>
+</div>
+</div>
+
+<div class="row pt-5">
+<div class="col-12">
+<h1 class="text-center text-info"><b>Our Consultants</b></h1>
+<div class="row pt-3">
+<div class="col-3">
+<img src={%static "images/d6.jpg" %} style="width:300px; height:300px;">
+<h4 class="text-info"><b><br>Emma Watson</b></h4>
+<p ><b>Surgeon</b></p>
+</div>
+<div class="col-3">
+<img src={%static "images/d4.jpg" %} style="width:300px; height:300px;">
+<h4 class="text-info"><b><br>Dylan O'brien</b></h4>
+<p><b>Surgeon</b></p>
+</div>
+<div class="col-3">
+<img src={%static "images/d10.jpg" %} style="width:300px; height:300px;">
+<h4 class="text-info"><b><br>Lilly Singh</b></h4>
+<p><b>Endocrinologist</b></p>
+</div>
+<div class="col-3">
+<img src={%static "images/d3.jpg" %} style="width:300px; height:300px;">
+<h4 class="text-info"><b><br>Corbyn Besson</b></h4>
+<p><b>Cardiologist</b></p>
+</div>
+</div>
+<div class="row pt-1">
+<div class="col-3 ">
+<img src={%static "images/d12.jpg" %} style="width:300px; height:300px;">
+<h4 class="text-info"><b><br>Jessica Davis</b></h4>
+<p><b>Radiologist</b></p>
+</div>
+<div class="col-3">
+<img src={%static "images/d11.jpg" %} style="width:300px; height:300px;">
+<h4 class="text-info"><b><br>Shawn Murphy</b></h4>
+<p><b>Pulmonologist</b></p>
+</div>
+<div class="col-3">
+<img src={%static "images/d13.jpg" %} style="width:300px; height:300px;">
+<h4 class="text-info"><b><br>Courtney Cox</b></h4>
+<p><b>Nephrologist</b></p>
+</div>
+<div class="col-3">
+<img src={%static "images/d9.jpg" %} style="width:300px; height:300px;">
+<h4 class="text-info"><b><br>Selena Gomez</b></h4>
+<p><b>Oncologist</b></p>
+</div>
+</div>
+<div class="row pt-4 pb-5">
+<div class="col-12 text-center">
+<h3 class="text-info"><b>Our Family Physicians</b></h3>
+<img src={%static "images/d5.jpg" %} >
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="container-fluid bg-light">
+<div class="container">
+<div class="row pt-4 pb-4">
+<div class="col-5 text-center text-info">
+<h2><b>Servicing Hours</b></h2>
+<br><br>
+<div class="row">
+<div class="col-8 text-dark text-left "> <b>Monday-Friday 
+</div>
+<div class="col-4 text-dark  text-right">9:00am-5:00pm</div></div>
+<hr>
+<div class="row">
+<div class="col-8 text-dark text-left"> Saturday 
+</div>
+<div class="col-4 text-dark">9:00am-2:30pm</div></div>
+<hr>
+<div class="row">
+<div class="col-8 text-dark text-left"> Sunday 
+</div>
+<div class="col-4 text-dark">1:00pm-4:00pm</div></div>
+<hr>
+</b>
+</div>
+
+<div class="col-1 "></div>
+<div class="col-6">
+<div class="row "><div class="col-md-9">
+<h2 class="text-center text-info" id="app"><b>  Make An Appointment</b></h2></div>
+<div class="col-md-9 p-5" style="border:1px solid black ; border-radius:5%;">
+    {% load crispy_forms_tags %}
+    <form method="post" action="{% url 'appointment' %}">
+        {% csrf_token %}
+        {{ forms.errors }}
+        <div class="form-group">
+            {{ form.name|as_crispy_field }}
+        </div>
+        <div class="form-group">
+            {{ form.department|as_crispy_field }}
+        </div>
+        <div class="form-group">
+            {{ form.doctor|as_crispy_field }}
+        </div>
+
+        <div class="form-group">
+            {{ form.phoneno|as_crispy_field }}
+        </div>
+
+        <div class="form-group">
+            {{ form.email|as_crispy_field }}
+        </div>
+        
+        <input type="submit" name="submit" value=" submit">      
+
+</div>
+<div class="col-md-9">
+</div></div></div>
+</div>
+</div>
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,110 @@
+{% extends 'dashboard1.html' %}
+{% block content %}
+
+{% load staticfiles %}
+
+<div class="container-fluid bg-light">
+<div class="row text-center pt-2 bg-light ">
+<div class="col-12"><br>
+<h2 class="text-info text-center"><b>Fill In The Following Details<br><br></b> </h2>
+</div>
+</div>
+<div class="row pt-3 text-center " style="border:1px solid black ; " >
+<div class="col-6">
+<form method="POST" action="{% url 'breast_cancer' %}">
+    {% csrf_token %}
+<div class="row pt-3">
+<div class="col-8">
+<br><b>Enter the class</b></div>
+<div class="col-4">
+<br><div class="form-group">
+<select class="form-control" name="class1">
+    <option>recurrence-events</option>
+    <option>no-recurrence-events</option>
+</select>
+</div>
+</div>
+</div>
+<div class="row pt-2">
+<div class="col-8">
+<br>
+<b>Enter the size of tumor</b></div>
+<div class="col-4">
+<br><input type="text" class="form-control" name="sizeoftumor" aria-label="Username" aria-describedby="basic-addon1">
+</div></div>
+<div class="row pt-3">
+    <div class="col-8">
+    <br><b>Enter the number of inv-nodes</b></div>
+    <div class="col-4">
+    <br><div class="form-group">
+        <select class="form-control" name="invnodes">
+            <option>0-2</option>
+        </select>
+        </div></div></div>
+</div>    
+<div class="col-6">
+
+<div class="row pt-3">
+<div class="col-8">
+<br><b>Enter if node caps are present</b></div>
+<div class="col-4">
+<br><div class="form-group">
+    <select class="form-control" name="nodecaps">
+        <option>yes</option>
+        <option>no</option>
+    </select>
+    </div></div>
+</div>
+<div class="row pt-2">
+<div class="col-8">
+<br><b>Enter the degree of malignancy</b>
+</div>
+<div class="col-4">
+<br><div class="form-group">
+    <select class="form-control" name="degmalig">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+    </select>
+    </div><button class="btn btn-info " class="form-control">Submit</button><br><br>
+</div></div></div>
+</form>
+</div>
+</div>
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

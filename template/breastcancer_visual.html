@@ -1,0 +1,35 @@
+{% extends 'dashboard1.html' %}
+{% block content %}
+
+{% load staticfiles %}
+
+<div class="container-fluid">
+    <div class="container">
+    <div class="row">
+       <div class="col-md-6 text-center">
+           <img src='{% static "images/breast_cancer1.png" %}'><br>
+           BREAST CANCER CASES 
+           </div>
+           <div class="col-md-6 text-center">
+           <img src='{% static "images/breast_cancer2.png" %}'><br>
+            NUMBER OF PATIENTS ACCORDING TO AGE GROUP
+           </div>
+
+       </div>
+
+
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <img src='{% static "images/breast_cancer3.png" %}'><br>
+            NUMBER OF PATIENTS ACCORDING TO TUMOR SIZE
+            </div>
+            <div class="col-md-6 text-center">
+            <img src='{% static "images/breast_cancer4.png" %}'><br>
+             COUNT  OF PATIENTS ACCORDING TO TUMOR SIZE CLASSIFIED AS RECURRENCE AND NON-RECURRENCE EVENTS 
+            </div>
+ 
+        </div>   
+       </div>
+       </div>
+
+{% endblock %}

@@ -1,0 +1,109 @@
+{% extends 'dashboard1.html' %}
+{% block content %}
+
+{% load staticfiles %}
+<body>
+
+    <div class="container-fluid ">
+    <div class="row text-center pt-2">
+    <div class="col-12"><br>
+    <h2 class="text-info text-center"><b>Fill In The Following Details<br><br></b> </h2>
+    </div>
+    </div>
+    <div class="row pt-3 text-center " style="border:1px solid black ; " >
+    <div class="col-6">
+        <form method="POST" action="{% url 'heart_form1' %}">
+    
+    <div class="row pt-3">
+    <div class="col-8">
+    <br><b>Enter the age of patient</b></div>
+    <div class="col-4">
+    <br><input type="text" class="form-control"  name="age" aria-label="Username" aria-describedby="basic-addon1" name="class1">
+    </div>
+    </div>
+    <div class="row pt-2">
+    <div class="col-8">
+    <br>
+    <b>Enter the sex of patient</b></div>
+    <div class="col-4">
+    <br><input type="text" class="form-control" name="gender" aria-label="Username" aria-describedby="basic-addon1" name="size">
+    </div></div>
+    <div class="row pt-3">
+    <div class="col-8">
+    <br><b>Enter the value of resting blood pressure</b></div>
+    <div class="col-4">
+    <br><input type="text" class="form-control"  name="bp" aria-label="Username" aria-describedby="basic-addon1" name="nodes">
+    </div></div>
+    <div class="row pt-3">
+    <div class="col-8">
+    <br><b>Enter the value of </b></div>
+    <div class="col-4">
+    <br><input type="text" class="form-control"  name="" aria-label="Username" aria-describedby="basic-addon1" name="nodes">    
+    </div></div>
+    
+    <div class="row pt-3">
+    <div class="col-8">
+    <br><b>Enter the value of resting ECG</b></div>
+    <div class="col-4">
+    <br><input type="text" class="form-control" name="ecg" aria-label="Username"  name="nodecaps" aria-describedby="basic-addon1">
+    </div>
+    </div>
+    <div class="row pt-2">
+    <div class="col-8">
+    <br><b>Enter the value of maximum heartrate achieved</b>
+    </div>
+    <div class="col-4">
+    <br> 
+    <input type="text" class="form-control"  name="heartrate" aria-label="Username" name="malignancy" aria-describedby="basic-addon1">
+    </div></div></div>
+    <div class="col-md-6">
+    
+    <div class="row pt-2">
+        <div class="col-8">
+        <br><b>Does Exercise induce Angina</b>
+        </div>
+        <div class="col-4">
+        <br> 
+        <input type="text" class="form-control" name="angina" aria-label="Username" name="malignancy" aria-describedby="basic-addon1">
+    </div></div>
+    
+        <div class="row pt-2">
+        <div class="col-8">
+            <br><b>Enter the value of ST depression induced by exercise relative to rest</b>
+            </div>
+            <div class="col-4">
+            <br> 
+            <input type="text" class="form-control" name="ST" aria-label="Username" name="malignancy" aria-describedby="basic-addon1">
+            </div></div>
+        <div class="row pt-2">
+           <div class="col-md-8 text-justify">
+                <br><b>Enter the value of the slope of the peak exercise ST segment</b>
+                </div>
+                <div class="col-md-4">
+                <br><input type="text" class="form-control" name="slope" aria-label="Username" aria-describedby="basic-addon1">
+                </div></div>
+    
+        <div class="row pt-2">
+            <div class="col-md-8 text-justify">
+                    <br><b>Enter the number of major vessels (0-3)</b>
+                    </div>
+                    <div class="col-md-4">
+                    <br><input type="number" class="form-control"  name="vessels" aria-label="Username" aria-describedby="basic-addon1">
+                    </div></div>    
+                    
+                    
+        <div class="row pt-2">
+                        <div class="col-md-8 text-justify">
+                        <br><b>Enter the value of the thalassemia<br> (where 3 = normal; 6 = fixed defect; 7 = reversable defect)</b>
+                        </div>
+                        <div class="col-md-4">
+                        <br><input type="text" class="form-control" name="th" aria-label="Username" aria-describedby="basic-addon1">
+                        </div></div>   <br>        
+    
+    <button class="btn btn-info " class="form-control">Submit</button><br><br>
+    </div></div></div></div>
+    </form>
+    </div>
+    </div>
+    
+{% endblock %}

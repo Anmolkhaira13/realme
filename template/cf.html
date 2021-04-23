@@ -1,0 +1,84 @@
+{% extends 'dashboard2.html' %}
+{% block content %}
+
+{% load staticfiles %}
+<div class="row p-5">
+<div class="col-7 text-justify">
+<img src={%static "images/cf4.jpg" %} style="width:450px; height:250px;">
+<h2 class="text-info text-center"><b> <br>Cold And Flu Overview</b></h2>
+<p class="text-dark text-justify">The common cold, including chest cold and head cold, and seasonal flu are caused by viruses. Use over-the-counter cold medications to relieve symptoms including sore throat, runny nose, congestion, and cough. Flu symptoms are similar, but include fever, headache and muscle soreness. See a doctor who may prescribe antiviral medications Relenza or Tamiflu.
+</p>
+<br><img src={%static "images/cf5.jpg" %} style="width:450px; height:250px;">
+<h2 class="text-info text-center"><b> <br>Is It Cold or Flu?</b></h2>
+<p class="text-dark text-justify">When you wake up sneezing, coughing, and have that achy, feverish, can't move a muscle feeling, how do you know whether you have cold symptoms or the flu?
+It's important to know the difference between flu and cold symptoms. A cold is a milder respiratory illness than the flu. While cold symptoms can make you feel bad for a few days, flu symptoms can make you feel quite ill for a few days to weeks. The flu can also result in serious health problems such as pneumonia and hospitalizations.
+</p>
+
+<h3 class="text-info text-center"><b><br>Common Cold Symptoms</b></h3>
+<p class="text-dark text-justify">Cold symptoms usually begin with a sore throat, which usually goes away after a day or two. Nasal symptoms, runny nose, and congestion follow, along with a cough by the fourth and fifth days. Fever is uncommon in adults, but a slight fever is possible. Children are more likely to have a fever with a cold.
+<br>
+With cold symptoms, the nose teems with watery nasal secretions for the first few days. Later, these become thicker and darker. Dark mucus is natural and does not usually mean you have developed a bacterial infection, such as a sinus infection.</p>
+<h3 class="text-info text-center"><b><br>Common Flu Symptoms</b></h3>
+<p class="text-dark text-justify">
+Flu symptoms are usually more severe than cold symptoms and come on quickly. Symptoms of fluinclude sore throat, fever, headache, muscle aches and soreness, congestion, and cough. Swine flu in particular is also associated with vomiting and diarrhea.
+<br>Most flu symptoms gradually improve over two to five days, but it's not uncommon to feel run down for a week or more. A common complication of the flu is pneumonia, particularly in the young, elderly, or people with lung or heart problems. If you notice shortness of breath, let your doctor know. Another common sign of pneumonia is fever that comes back after having been gone for a day or two.
+</p>
+<br><img src={%static "images/cf6.jpg" %} style="width:450px; height:250px;">
+<h2 class="text-info text-center"><b> <br>When to Call A Doctor? </b></h2>
+<p class="text-dark text-justify">If you already have flu or cold symptoms, it's important to call your doctor if you also have any of the following severe symptoms:
+<ul type="disc">
+<li>
+<b>Persistent fever:</b><br>
+A fever lasting more than three days can be a sign of another bacterial infection that should be treated.</li>
+<li>
+<b>Painful swallowing:</b><br>
+Although a sore throat from a cold or flu can cause mild discomfort, severe pain could mean strep throat, which requires treatment by a doctor.</li>
+<li>
+<b>Persistent coughing:</b><br>
+When a cough doesn't go away after two or three weeks, it could be bronchitis, which may need an antibiotic. Postnasal drip or sinusitis can also result in a persistent cough. In addition, asthma is another cause of persistent coughing.</li>
+<li>
+<b>Persistent congestion and headaches:</b><br>
+When colds and allergies cause congestion and blockage of sinus passages, they can lead to a sinus infection (sinusitis). If you have pain around the eyes and face with thick nasal discharge after a week, you may have a bacterial infection and possibly need an antibiotic. Most sinus infections, however, do not need an antibiotic.
+    </li></ul>
+In some cases, you may need to get emergency medical attention right away. In adults, signs of a crisis include:
+<ul type="disc">
+<li>
+Severe chest pain.</li>
+<li>Severe headache.</li>
+<li>Shortness of breath.</li>
+<li>Dizziness.</li>
+<li>Confusion.</li>
+<li>Persistent vomiting.</li></ul>
+In children, additional signs of an emergency are:
+<ul type="disc">
+<li>
+Difficulty breathing or rapid breathing.</li>
+<li>Bluish skin color.</li>
+<li>Not drinking enough fluids.</li>
+<li>Lethargy and failure to interact normally.</li>
+<li>Extreme irritability or distress.</li>
+<li>Symptoms that were improving and then suddenly worsen.</li>
+<li>Fever with a rash.</li></ul>
+    </p>
+</div>
+<div class="col-5">
+    <h3 class="text-info"><b> Recommended For You</b></h3>
+    <br><div class="row">
+    <div class="col-3">
+    <img src={%static "images/cf.jpg" %} style="width:80px;height:80px"></div>
+    <div class="col-9"><a class="text-info" href="https://www.webmd.com/cold-and-flu/features/which-habits-really-help-you-avoid-colds" target="_blank"><b> Best Habits To Help You Avoid Cold and Flu</b></a> <br></div></div>
+    <br><div class="row">
+    <div class="col-3">
+    <img src={%static "images/cf1.jpg" %} style="width:80px;height:80px"></div>
+    <div class="col-9"><a class="text-info" href="https://www.webmd.com/cold-and-flu/features/cold-sinus-infections#1" target="_blank"><b>Is It Cold or Sinus Infection? </b></a> <br></div></div>
+    <br><div class="row">
+    <div class="col-3">
+    <img src={%static "images/cf2.jpg" %} style="width:80px;height:80px"></div>
+    <div class="col-9"><a class="text-info" href="https://www.webmd.com/cold-and-flu/ss/slideshow-germiest-things" target="_blank"><b>Germy Things You Touch Everyday</b></a> <br></div></div>
+    <br><div class="row">
+    <div class="col-3">
+    <img src={%static "images/cf3.jpg" %} style="width:80px;height:80px"></div>
+    <div class="col-9"><a class="text-info" href="https://www.webmd.com/cold-and-flu/cold-guide/10-immune-system-busters-boosters#1" target="_blank"><b>6 Immune System Busters and Boosters</b></a> <br></div></div>
+    </div>
+    </div>
+{% endblock %}

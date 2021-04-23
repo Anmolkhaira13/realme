@@ -1,0 +1,108 @@
+{% extends 'hf.html' %}
+{% block content %}
+
+{% load staticfiles %}
+        
+<div class="container-fluid">
+<div class="row  p-5 " style="background-image:url('{%static "images/about6.jpeg" %} '); background-size:cover; ">
+<div class="col-12 text-center text-light pt-4 pd-5 ">
+<h1><b><br><br> ABOUT US<br><br></b></h1>
+</div>
+</div>
+</div>
+<br>
+<br>
+<h1 class="text-info"><b><center> A Few Words About Us </center></b></h1>
+<br>
+<br>
+<div class="container-fluid">
+<div class="row">
+<div class="col-4 text-justify text-light" style="background-image:url('{%static "images/about.jpg" %}'); background-size:cover; filter:opacity(100%);">
+<h2 class="pt-5 pb-4 "><b><center>Our Center<center></b></h2>
+<p class="pt-4 pb-3 text-dark">We serve as a great help to doctors, patients, and other users.
+Doctors will be provided with a prediction tool to accurately predict the chances of occurrence of any disease depending on 
+diagnosis. They will also be provided with rights to prescribe tests to patients according to their reported symptoms.
+Patients could upload reports for doctors to check. They will also be provided with list of laboratories and hospitals for their treatment.
+Anyone who has an enquiry about health related issues will be served through blogs and other information provided on website.
+</p>
+</div>
+
+<div class="col-4 text-justify text-light" style="background-image:url('{%static "images/about 4.jpg" %}'); background-size:cover; filter:opacity(100%);">
+<h2 class="pt-5 pb-4"><b><center>Our Mission<center></b></h2>
+<p class="pt-4 pb-3 text-dark">Our Mission is to provide our patients, their families and our
+community with extraordinary healthcare service, to ensure peace of mind through high quality,
+compassionate treatment and to deliver care beyond their expectations.
+To inspire hope, and contribute to health and well-being by providing the best care to every patient. 
+To work with the cooperation of the community and other local government units to create a 
+vibrant and healthy physical, social and economic environment.And also all our services shall be provided in a fair, respectful 
+and professional manner consistent with available human, natural and economic resources.
+</p>
+</div>
+
+<div class="col-4 text-justify text-light" style="background-image:url('{%static "images/about 2.jpg" %}'); background-size:cover; filter:opacity(100%);">
+<h2 class="pt-5 pb-4"><b><center>Our Vision<center></b></h2>
+<p class="pt-4 pb-3 text-dark">Our Vision is to serve optimal health across the lifespan for the populations.
+To have self-sufficient families in safe and healthy communities.To be a prominent community member known for meeting the 
+healthcare needs of the entire community through incomparable patient care and wellness programs.
+To lead the region as a healthcare Team by exceeding patient expectations through the advancement of quality medical services.
+To be know for our commitment to excellence and its response to changing customer needs.
+Last but not the least to be able to computerize with the latest information systems linking all elements of the network 
+throughout all the service area.
+</p>
+</div>
+</div>
+</div>
+
+<div class="row pt-5" id="docs">
+<div class="col-12 pt-5"><h2 class="text-info"><center><b> OUR DOCTORS</center></b></h2>
+<h6 class="text-info"><center><b>To choose from</b></h6></center>
+</div>
+</div>
+
+<div class="container-fluid">
+<div class="row pt-4">
+<div class="col-4 ">
+<img src={%static "images/d6.jpg" %} style="width:300px; height:300px;">
+<h4 class="text-info"><b><br>Emma Watson</b></h4>
+<p >Surgeon</p>
+</div>
+<div class="col-4">
+<img src={%static "images/d4.jpg" %} style="width:300px; height:300px;">
+<h4 class="text-info"><b><br>Dylan O'brien</b></h4>
+<p>Surgeon</p>
+</div>
+<div class="col-4">
+<img src={%static "images/d10.jpg" %} style="width:300px; height:300px;">
+<h4 class="text-info"><b><br>Lilly Singh</b></h4>
+<p>Endocrinologist</p>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row pt-2">
+<div class="col-4 ">
+<img src={%static "images/d12.jpg" %} style="width:300px; height:300px;">
+<h4 class="text-info"><b><br>Jessica Davis</b></h4>
+<p>Radiologist</p>
+</div>
+<div class="col-4">
+<img src={%static "images/d11.jpg" %} style="width:300px; height:300px;">
+<h4 class="text-info"><b><br>Shawn Murphy</b></h4>
+<p>Pulmonologist</p>
+</div>
+<div class="col-4">
+<img src={%static "images/d13.jpg" %} style="width:300px; height:300px;">
+<h4 class="text-info"><b><br>Courtney Cox</b></h4>
+<p>Nephrologist</p>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<br><br><div class="row pt-4 pb-3">
+<div class="col-12 text-center">
+<h2 class="text-info"><b>Our Family Phsysicians</b></h2>
+<img src={%static "images/d5.jpg" %} >
+</div>
+</div>
+</div>
+{% endblock %}

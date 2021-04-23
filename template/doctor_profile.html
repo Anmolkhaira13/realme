@@ -1,0 +1,95 @@
+{% extends 'dashboard1.html' %}
+{% block content %}
+
+<div class="container-fluid  ">
+  <div class="container">
+  <div class="row  pt-3 text-center text-info">
+  <div class="col-12">
+  <h2 ><b>Your Profile</b></h2><br>
+  </div>
+  </div>
+  <div class="row"  style = "border:1px solid lightblue ; ">
+    <div class="row p-2">
+    <div class="col-4">
+        <img src="{{ expert.photo.url }}" width="230" height="300">
+</div>
+<div class="col-8">
+    <div class="row pt-2">
+      <div class="col-4">
+          <h4 class="text-info">Doctor I.D </h4>
+      </div>
+      <div class="col-8">
+          <h4 class="text-info">  {{expert.doctor_id}}</h4>
+      </div>
+    </div>
+<hr>
+    <div class="row ">
+        <div class="col-4">
+            <h4 class="text-info">Username</h4>
+        </div>
+        <div class="col-8">
+            <h4 class="text-info"> {{expert.username}}</h4>
+        </div>
+      </div>
+      <hr>
+      <div class="row ">
+          <div class="col-4">
+              <h4 class="text-info">Email</h4>
+          </div>
+          <div class="col-8">
+              <h4 class="text-info"> {{expert.email}}</h4>
+          </div>
+        </div><hr>
+        <div class="row ">
+            <div class="col-4">
+                <h4 class="text-info">Contact</h4>
+            </div>
+            <div class="col-8">
+                <h4 class="text-info"> {{expert.phoneno}}</h4>
+            </div>
+          </div><hr>
+    
+          <div class="row ">
+              <div class="col-4">
+                  <h4 class="text-info">Expertise</h4>
+              </div>
+              <div class="col-8">
+                  <h4 class="text-info"> {{expert.expertise}}</h4>
+              </div>
+            </div>
+      <hr>
+            <div class="row ">
+                <div class="col-4">
+                    <h4 class="text-info">Qualification</h4>
+                </div>
+                <div class="col-8">
+                    <h4 class="text-info"> {{expert.qualification}}</h4>
+                </div>
+              </div>
+              <hr>
+              <div class="row ">
+                  <div class="col-4">
+                      <h4 class="text-info">City</h4>
+                  </div>
+                  <div class="col-8">
+                      <h4 class="text-info"> {{expert.city}}</h4>
+                  </div>
+                </div>    <hr>
+                <div class="row ">
+                    <div class="col-4">
+                        <h4 class="text-info">Address</h4>
+                    </div>
+                    <div class="col-8">
+                        <h4 class="text-info"> {{expert.address}}</h4>
+                    </div>
+                  </div>
+              
+
+</div> 
+</div>
+</div>
+  </div>
+</div>
+  
+
+{% endblock %}

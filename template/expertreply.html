@@ -1,0 +1,85 @@
+
+
+
+
+{% extends 'dashboard1.html' %}
+{% block content %}
+<form method="post" action="{% url 'updateexpertreply' id=expertqs.consult_id %}" >
+    {% csrf_token %}
+
+<div class="row">
+<div class="col-5">
+
+<div class="row"> 
+        <div class="col-6">    
+<div class="form-group row bg-light">
+<label for="doctor_id" class="col-sm-6 col-form-label"><h5 class="text-info">Your Name</h5></label> 
+<div class="col-6 p-1">
+<input type="text" name="doc_name" class="form-control" required maxlength="10" id="docname" value="{{expertqs.doc_name}}">
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-6 pt-4">
+<div class="form-group row bg-light">
+        <label for="expert_username" class="col-sm-6 col-form-label"><h5 class="text-info">Patient Name</h5></label>
+        <div class="col-6 p-1">
+        <input type="text" name="user_name" class="form-control" required maxlength="20" id="username" value="{{expertqs.user_name}}">
+        </div>
+        </div></div></div>
+
+<div class="row">
+<div class="col-6 pt-4">        
+<div class="form-group row bg-light">
+                <label for="expert_email" class="col-sm-6 col-form-label"><h5 class="text-info">Message</h5></label>
+                <div class="col-6 p-1">
+                <input type="text" name="message" class="form-control" required maxlength="30" id="question" value="{{expertqs.message}}">
+                </div>
+                </div></div></div>
+
+<div class="row">
+    <div class="col-6 pt-4">                
+<div class="form-group row bg-light">
+                        <label for="expert_phone" class="col-sm-6 col-form-label"><h5 class="text-info">Date</h5></label>
+                        <div class="col-6 p-1">
+                        <input type="text" name="date" class="form-control" required maxlength="20" id="date" value="{{ expertqs.date | date:'Y-m-d'}}">
+                        </div>
+                        </div>
+    </div></div>  
+    <div class="row">
+            <div class="col-6 pt-4">                  
+<div class="form-group row bg-light">
+                                <label for="expert_city" class="col-sm-6 col-form-label"><h5 class="text-info">Reply Date</h5></label>
+                                <div class="col-6 p-1">
+                                <input type="text" name="replydate" class="form-control" required maxlength="20" id="replydate" value="{{ d }}">
+                                </div>
+                                </div>
+</div></div></div>
+<div class="col-7">
+    <div class="row">
+        <div class="col-4 text-info">
+                Enter Your Reply
+            <br>
+                        {% if expertqs.reply %}
+                                   <br> <textarea name="reply" >
+                                        {{ expertqs.reply }}
+                                    </textarea><br>
+                                    {% else %}
+                                    <textarea name="reply"></textarea><br>
+                                    {% endif %}<br><br>
+                                    <button type="submit" class="btn btn-info" >Update</button><br>
+                                    </div></div>
+                                
+        </div>
+    </div>
+
+
+
+
+                
+
+
+</form>
+
+{% endblock %}

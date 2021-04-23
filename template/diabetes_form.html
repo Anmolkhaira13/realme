@@ -1,0 +1,111 @@
+{% extends 'dashboard1.html' %}
+{% block content %}
+
+{% load staticfiles %}
+
+<body>
+
+    <div class="container-fluid ">
+    <div class="row text-center pt-2">
+    <div class="col-12"><br>
+    <h2 class="text-info text-center"><b>Fill In The Following Details<br><br></b> </h2>
+    </div>
+    </div>
+    <div class="row pt-3 text-center " style="border:1px solid black ; " >
+    <div class="col-6">
+        <form method="POST" action="{% url 'df' %}">
+            {% csrf_token %}
+    
+    <div class="row pt-3">
+    <div class="col-8">
+    <br><b>Enter the age of patient</b></div>
+    <div class="col-4">
+    <br><input type="text" required=required class="form-control"  aria-label="Username" aria-describedby="basic-addon1" name="age">
+    </div>
+    </div>
+    <div class="row pt-3">
+    <div class="col-8">
+    <br>
+    <b>Enter the number of pregnancies</b></div>
+    <div class="col-4">
+    <br><input type="text"  required=required class="form-control"  aria-label="Username" aria-describedby="basic-addon1" name="preg">
+    </div></div>
+    <div class="row pt-3">
+    <div class="col-8">
+    <br><b>Enter the value of glucose</b></div>
+    <div class="col-4">
+    <br><input type="text" required=required class="form-control"  aria-label="Username" aria-describedby="basic-addon1" name="glu">
+    </div></div>
+    <div class="row pt-3">
+    <div class="col-8">
+    <br><b>Enter the value of skin thickness</b></div>
+    <div class="col-4">
+    <br><input type="text"  required=required class="form-control"  aria-label="Username" aria-describedby="basic-addon1" name="thick">    
+    </div></div>
+    </div>
+       
+    <div class="col-6">
+    
+    <div class="row pt-3">
+    <div class="col-8">
+    <br><b>Enter the value of insulin</b></div>
+    <div class="col-4">
+    <br><input type="text" class="form-control" required=required  aria-label="Username"  name="insulin" aria-describedby="basic-addon1">
+    </div>
+    </div>
+    <div class="row pt-3">
+    <div class="col-8">
+    <br><b>Enter the value of BMI</b>
+    </div>
+    <div class="col-4">
+    <br> 
+    <input type="text" class="form-control"   required=required aria-label="Username" name="bmi" aria-describedby="basic-addon1">
+    
+    </div></div>
+    <div class="row pt-3">
+        <div class="col-8">
+        <br><b>Enter the value of Diabetes Pedigree Function</b>
+        </div>
+        <div class="col-4">
+        <br> 
+        <input type="text" class="form-control"   required=required aria-label="Username" name="pf" aria-describedby="basic-addon1"><br><br>
+    <button class="btn btn-info " class="form-control">Submit</button><br><br>
+    </div></div></div>
+    </form>
+    </div>
+    </div>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

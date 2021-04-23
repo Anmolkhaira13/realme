@@ -1,0 +1,46 @@
+{% extends 'dashboard1.html' %}
+{% block content %}
+
+<div class="row">
+
+<div class="col-md-4">
+        <table class="table">
+                <thead>
+                  <tr>
+                    <th>Username</th>
+                    <th>Doctorname</th>
+                    <th>Message</th>
+                    <th>Date of Question</th>
+                    <th>report</th>
+                    <th>reply</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    {% for i in info %}   
+                        
+                  <tr>
+                     
+                    <td>{{i.user_name}}</td>
+                    <td>{{i.doc_name}}</td>
+                    <td>{{i.message}}</td>
+                    <td>{{i.date}}</td>
+                    
+                    <td><a download href={{i.report.url}}>report</a> </td>
+                    <td><a  href="{% url 'replytoques' consult_id=i.consult_id %}" class="text-info"><b>reply</b></a> </td>
+                  </tr>
+                  {% endfor %} 
+                </tbody>
+                
+              </table>
+
+
+
+
+</div>
+</div>
+
+
+
+{% endblock %}
+
+

@@ -1,0 +1,50 @@
+{% extends 'hf.html' %}
+{% block content %}
+
+{% load staticfiles %}
+
+<body style="background-image:url('{%static "images/form1.jpg" %}'); background-size:cover; ">
+
+<div class="container-fluid  ">
+<div class="container">
+<div class="row text-center">
+<div class="col-md-1"></div>
+<div class="col-md-4 pt-3 "><i class="icofont-medical-sign-alt icofont-4x  "> <h4>Happy 2 Help</h4></i>
+</div>
+</div>
+<div class="row  pt-3 text-center">
+<div class="col-md-1"></div>
+<div class="col-md-4">
+<h2 >SIGN IN</h2><br>
+</div>
+</div>
+<div class="row text-center">
+<div class="col-md-1"></div>
+<div class="col-md-4 pt-3 pb-3" style ="border:1px solid black ; border-radius:5%;">
+<form  method="POST" action="{% url 'doc_login' %}" >
+{% load crispy_forms_tags %}
+<p>Sign in to start your session</p>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1"><i class="icofont-envelope "></i></span>
+  </div>
+  <input type="text" class="form-control" required="required" name="username" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+</div><br>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1"><i class="icofont-ui-lock "></i></span>
+  </div>
+  <input type="password" required="required" class="form-control" name="password" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
+</div><br>
+
+{% csrf_token %}
+<input type="submit" value="login" name="submit" class="btn-btn-info" >
+<a href="" class="text-danger">Forgot Password</a>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br><br><br><br>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'dashboard1.html' %}
+{% block content %}
+
+{% load staticfiles %}
+
+<div class="container-fluid">
+    <div class="container">
+    <div class="row">
+       <div class="col-md-6 text-center">
+           <img src='{% static "images/diabetes1.png" %}'><br>
+           TOP FIVE AFFECTED ALARMING GLUCOSE LEVELS
+           </div>
+           <div class="col-md-6 text-center">
+           <img src='{% static "images/diabetes2.png" %}'><br>
+            NUMBER OF DIABETIC PEOPLE AGE WISE
+           </div>
+
+       </div>
+       </div>
+       </div>
+
+{% endblock %}

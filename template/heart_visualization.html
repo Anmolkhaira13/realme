@@ -1,0 +1,55 @@
+{% extends 'dashboard1.html' %}
+{% block content %}
+
+{% load staticfiles %}
+
+<div class="container-fluid">
+    <div class="container">
+    <div class="row">
+       <div class="col-md-6 text-center">
+           <img src='{% static "images/heart_1.png" %}'><br>
+           TOP FIVE AFFECTED AGE GROUPS WITH HEART DISEASE
+           </div>
+           <div class="col-md-6 text-center">
+           <img src='{% static "images/heart_2.png" %}'><br>
+            COUNT OF PATIENTS WITH AND WITHOUT FASTING BLOOD SUGAR VALUE GREATER THAN 120 mg/dl
+           </div>
+
+       </div>
+       <br>
+
+    <div class="row">
+            <div class="col-md-6 text-center">
+                <img src='{% static "images/heart_4.png" %}'><br>
+                COMPARISON OF BLOOD PRESSURE VALUES OF MEN AND WOMEN WITH HEART DISEASE
+                
+                </div>
+                <div class="col-md-6 text-center">
+                <img src='{% static "images/heart_6.png" %}'><br>
+                COMPARISON OF CHOLESTROL VALUES OF MEN AND WOMEN WITH HEART DISEASE
+
+                 
+                </div>
+                </div>
+                <br><br>
+    <div class="row">
+            <div class="col-md-6 text-center">
+                <img src='{% static "images/heart_7.png" %}'><br>
+                RESTING BLOOD PRESSURE VALUES FOR PATIENTS WITH HEART DISEASE
+                            
+                </div>
+                <div class="col-md-6 text-center">
+                 <img src='{% static "images/heart_5.png" %}'><br>
+                 COUNT OF MALES AND FEMALES WITH HEART DISEASE
+            
+                </div>
+            </div>  <br> 
+
+    </div>
+</div>
+
+
+
+
+
+{% endblock %}

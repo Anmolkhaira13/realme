@@ -1,0 +1,62 @@
+{% extends 'hf.html' %}
+{% block content %}
+
+{% load staticfiles %}
+
+<div class="container-fluid">
+<div class="row  p-5 " style="background-image:url('{%static "images/d7.jpg" %}'); background-size:cover; ">
+<div class="col-12 text-center text-dark">
+<h1><b> CONTACT US</b></h1>
+<h3>Call our customer care team for an immediate response on<br>9783366710<br>
+Lines are live: Monday - Saturday between 9am IST - 4pm IST<br>
+You can also message us using our web form below <br> 
+We'll get back to you within 24 hours.</h3><br><br>
+</div>
+</div>
+</div>
+<div class="container-fluid text-justify bg-light">
+<div class="container">
+<div class="row pt-4 pb-4">
+<div class="col-6">
+<h4><i class="icofont-pin"></i>
+Address</h4>
+<p>D-Block,Ranjit Avenue<br>Amritsar<br><hr></p>
+<h4><i class="icofont-ui-call"></i> Telephone</h4>
+<p>9783366710<br>+01832553467<br><hr></p>
+<h4><i class="icofont-envelope"></i> Email</h4>
+<p>arpanrandhawa88633@gmail.com<br>anmolkhaira327@gmail.com<br><hr></p>
+</div>
+<div class="col-6">
+<div class="row">
+<div class="col-12">
+<h4> Send Us a Query Anytime</h4>
+<br>
+</div></div>
+{% load crispy_forms_tags %}
+<div class="row">
+<div class="col-6">
+<form method="post" action="{% url 'contactus' %}">
+    {% csrf_token %}
+    {{ forms.errors }}
+    <div class="form-group">
+        {{ form.name|as_crispy_field }}
+    </div>
+    <div class="form-group">
+        {{ form.email|as_crispy_field }}
+    </div>
+    <div class="form-group">
+        {{ form.phoneno|as_crispy_field}}
+    </div>
+
+</div>
+<div class="col-6">
+    <div class="form-group">
+        {{ form.message|as_crispy_field}}
+    </div>
+<input type="submit" name="submit" value=" submit">
+</form>
+</div>
+</div>
+<br><br></div></div></div></div>
+
+{% endblock %}

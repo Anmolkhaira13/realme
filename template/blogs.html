@@ -1,0 +1,55 @@
+{% extends 'hf.html' %}
+{% block content %}
+
+{% load staticfiles %}
+
+<div class="container-fluid">
+<div class="row  p-5 " style="background-image:url('{%static "images/news.jpg" %}');  background-size:cover; ">
+<div class="col-12 text-center text-light pt-4 pd-5 ">
+<h1><b><br>BLOGS<br><br> </b></h1>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row p-5">
+<div class="col-8 text-justify">
+<img src={%static "images/news_1.jpg" %} style="width:700px; height:250px;">
+<h2><b> <br>45 Tips To Live A Healthier Life</b></h2>
+<p>How healthy are you? Do you have a healthy diet? Do you exercise regularly? Do you drink at <br>least eight glasses of water a day? Do you get enough sleep every day? Do you live a healthy<br> lifestyle?
+Life is beautiful and you don't want to bog yourself down with unnecessary health<br> problems. Today, your vital organs may be working well, but they may not be tomorrow.<br> Don't take your health for granted. Take proper care of your body.
+</p>
+<a href="https://personalexcellence.co/blog/healthy-living/" target="_blank"><button type="button" class="btn btn-outline-info"> Read More</a></button>
+<br><br><br><br><img src={%static "images/news_2.jpg" %} style="width:700px; height:350px;">
+<h2><b><br>Discoveries That Revolutionized Medicine</b></h2>
+<p>The past decade has seen remarkable progress in the field of medicine. Since scientists with the <br> International Human Genome Project released a rough draft of the human genome to the public <br> in 2000, the impact of science and technology on medicine has arguably been more salient than <br>ever. New discoveries and inventions have opened up new possibilities in both the treatment and<br> prevention of human sickness, so far that diseases that were once instant death sentences<br> like cancer and HIV/AIDS, while still potentially fatal, a little less horrifying.
+</p>
+<a href="https://www.fastcompany.com/1794863/7-recent-discoveries-could-revolutionize-medicine" target="_blank"><button type="button" class="btn btn-outline-info"> Read More</a></button>
+<br><br><br><br><img src={%static "images/news_3.jpg" %} style="width:700px; height:250px;">
+<h2><b><br>Scorpion Toxin May Help Solve The Mystery <br>Of Chronic Pain</b></h2>
+<p>Researchers have discovered a scorpion toxin that targets the 'wasabi receptor,' a chemical-sensing<br> protein found in nerve cells that's responsible for the sinus-jolting sting of wasabi. Because the <br>toxin triggers a pain response, scientists think it can be used as a tool for studying chronic pain<br> and inflammation, and may eventually lead to the development of new kinds of non-opioid pain<br> relievers.
+</p>
+<a href="https://www.sciencedaily.com/releases/2019/08/190822113400.htm" target="_blank"><button type="button" class="btn btn-outline-info"> Read More</a></button>
+</div>
+<div class="col-4">
+<h3><b> Latest Blogs</b></h3>
+<br><div class="row">
+<div class="col-3">
+<img src={%static "images/info_2.jpg" %} style="width:80px;height:80px"></div>
+<div class="col-9"><a href="https://www.foley.com/en/insights/blogs/health-care-law-today" target="_blank"><b>Health Care Laws</b></a> <br>By: Foley and Landler LLP<br> 27 August 2019</div></div>
+<br><div class="row">
+<div class="col-3">
+<img src={%static "images/news_4.png" %} style="width:80px;height:80px"></div>
+<div class="col-9"><a href="https://myheartsisters.org/" target="_blank"><b>A Typical Heart</b></a> <br>By: Carolyn Thomas<br> 15 July 2019</div></div>
+<br><div class="row">
+<div class="col-3">
+<img src={%static "images/news_5.jpg" %} style="width:80px;height:80px"></div>
+<div class="col-9"><a href="https://thenaturaldoctor.org/" target="_blank"><b>Natural Health Clinic</b></a> <br>By: Dr. Nyjon Eccles<br> 1 May 2019</div></div>
+<br><div class="row">
+<div class="col-3">
+<img src={%static "images/news_6.png" %} style="width:80px;height:80px"></div>
+<div class="col-9"><a href="https://thecompleteherbalguide.com/entries/yoga/five-traditional-branches-of-yoga/" target="_blank"><b>Traditional Branches Of Yoga</b></a> <br>By: Jason Crandell<br> 17 January 2019</div></div>
+</div>
+</div>
+</div>
+
+{% endblock %}

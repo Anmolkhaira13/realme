@@ -1,0 +1,63 @@
+{% extends 'dashboard2.html' %}
+{% block content %}
+
+{% load staticfiles %}
+<div class="row p-5">
+<div class="col-7 text-justify">
+<img src={%static "images/bc.png" %} style="width:450px; height:250px;">
+<h2 class="text-info text-center"><b> <br>What Is Breast Cancer?</b></h2>
+<p class="text-dark text-justify">As in all forms of cancer, breast cancer is made of abnormal cells that have grown uncontrollably. Those cells may also travel to places in your body where they aren’t normally found. When that happens, the cancer is called metastatic.
+The first sign of breast cancer often is a breast lump or an abnormal mammogram. Breast cancer stages range from early, curable breast cancer to metastatic breast cancer, with a variety of breast cancer treatments. Male breast cancer is not uncommon and must be taken seriously.
+Breast cancer usually begins in a small, confined area in the or glands, which produce milk (lobular carcinoma) or the ducts (ductal carcinoma), which carry it to the nipple. It can grow larger in the breast and spread through channels to nearby lymph nodes or through your 
+bloodstream to other organs. The cancer may grow and invade tissue around the breast, such as the skin or chest wall. Different types of breast cancer grow and spread at different rates -- some take years to spread beyond the breast, while others grow and spread quickly.
+</p>
+<br><img src={%static "images/bc1.png" %} style="width:450px; height:250px;">
+<h2 class="text-info text-center"><b><br>Types of Breast Cancer</b></h2>
+<p class="text-dark text-justify">Some of the most common types of breast cancer include:<br>
+
+<ul type="disc">
+<li>
+Ductal carcinoma in situ (DCIS): This is ductal carcinoma in its earliest stage (stage 0). In this case, the disease is still in the milk ducts. But if you don’t treat this type, it can become invasive. It’s often curable.</li>
+<li>Lobular carcinoma in situ (LCIS): This is found only in the lobules, which produce breast milk. It isn't a true cancer, but a marker that means you’re more likely to get breast cancer later. If you have it, get regular breast exams and mammograms.</li>
+<li>
+Invasive or infiltrating ductal carcinoma (IDC): This cancer starts in the milk ducts. It breaks through the wall of the duct and invades the fatty tissue of the breast. It’s the most common form, accounting for 80% of invasive cases.</li>
+<li>Invasive lobular carcinoma (ILC): This cancer starts in the lobules but spreads to surrounding tissues or other body parts. It accounts for about 10% of invasive breast cancers.</li></ul>
+</p>
+<h2 class="text-info text-center"><b> <br>Symptoms Of Breast Cancer</b></h2>
+<p class="text-dark text-justify">The symptoms of breast cancer include:
+<ul type="disc">
+    <li>A lump or thickened area in or near your breast or underarm that lasts throughout your period</li>
+    <li>A mass or lump -- even if it feels as small as a pea</li>
+    <li>A change in your breast’s size, shape, or curve</li>
+    <li>Nipple discharge -- it could be bloody or clear</li>
+    <li>The skin of your breast or your nipple looks or feels different -- it could be dimpled, puckered, scaly, or inflamed</li>
+    <li>Red skin on your breast or nipple</li>
+    <li>Changes in the shape or position of your nipple</li>
+    <li>An area that’s different from any other area on either breast</li>
+    <li>A hard, marble-sized area under your skin</li>
+    </ul>
+
+    <h2 class="text-info text-center"><b> <br>Causes and Risks Of Breast Cancer</b></h2>
+    <p class="text-dark text-justify">We don’t know what causes breast cancer, but we do know certain things make you more likely to get it. Your age, genetic factors, personal health history, and diet all play a role. Some you can control; others you can’t.</p>
+</div>
+<div class="col-5">
+    <h3 class="text-info"><b> Recommended For You</b></h3>
+    <br><div class="row">
+    <div class="col-3">
+    <img src={%static "images/bc3.jpg" %} style="width:80px;height:80px"></div>
+    <div class="col-9"><a class="text-info" href="https://www.webmd.com/breast-cancer/breast-cancer-early-stage-dcis#1" target="_blank"><b>Understanding Stage 0 Of Breast Cancer</b></a> <br></div></div>
+    <br><div class="row">
+    <div class="col-3">
+    <img src={%static "images/bc2.jpg" %} style="width:80px;height:80px"></div>
+    <div class="col-9"><a class="text-info" href="https://www.webmd.com/breast-cancer/features/metastatic-breast-cancer#1" target="_blank"><b>Living Well With Metastatic Breast Cancer</b></a> <br></div></div>
+    <br><div class="row">
+    <div class="col-3">
+    <img src={%static "images/bc4.jpg" %} style="width:80px;height:80px"></div>
+    <div class="col-9"><a class="text-info" href="https://www.webmd.com/breast-cancer/news/20111207/steps-women-can-take-reduce-risk-breast-cancer#1" target="_blank"><b>Steps Women Can Take To Reduce The Risk Of Breast Cancer</b></a> <br></div></div>
+    <br><div class="row">
+    <div class="col-3">
+    <img src={%static "images/bc5.jpg" %} style="width:80px;height:80px"></div>
+    <div class="col-9"><a class="text-info" href="https://www.webmd.com/breast-cancer/news/20120222/new-guidelines-to-help-breast-cancer-survivors#1" target="_blank"><b>New Guidelines To Help Breast Cancer Survivors</b></a> <br></div></div>
+    </div>
+    </div>
+{% endblock %}
